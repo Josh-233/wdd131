@@ -1,0 +1,15 @@
+/* Large screen navigation */
+@media (min-width: 768px) {
+  #menu {
+    display: none; /* hide hamburger */
+  }
+
+  .navigation {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 1.5rem;
+    background: none;
+    padding: 0;
+  }
+}

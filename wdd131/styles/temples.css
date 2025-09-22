@@ -1,0 +1,107 @@
+/* temples.css - base styles */
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #003366;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.25rem;
+}
+
+/* Nav & hamburger */
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: #004080;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.navigation a:hover {
+  color: #ff9800;
+}
+
+/* Main */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #003366;
+}
+
+/* Figures */
+figure {
+  background: white;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
