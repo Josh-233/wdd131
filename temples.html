@@ -1,43 +1,52 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temple Album</title>
+  <title>Temples Around the World</title>
   <link rel="stylesheet" href="styles/temples.css">
-  <link rel="stylesheet" href="styles/temples-large.css">
-  <script src="scripts/temples.js" defer></script>
+<link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+
 </head>
 <body>
   <header>
-    <h1>Temple Album</h1>
-    <button id="menu">☰</button>
-    <nav class="navigation">
-      <a href="./index.html">Home</a>
-      <a href="./temples.html">Temples</a>
-      <a href="./about.html">About</a>
-      <a href="./contact.html">Contact</a>
+    <h1>Temples Around the World</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="temples.html" class="active">Temples</a>
     </nav>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-temple.jpg" type="image/jpg">
+      <img src="images/hero-temple.jpg" alt="Collection of World Temples">
+    </picture>
+    <div class="hero-text">
+      <h2>Explore Sacred Places</h2>
+      <p>A gallery of 9 temples from across the globe.</p>
+    </div>
+  </section>
+
   <main>
-    <h1>Temples Around the World</h1>
-
-    <figure><img src="images/temple1.jpg" alt="Temple 1"><figcaption>Temple 1</figcaption></figure>
-    <figure><img src="images/temple2.jpg" alt="Temple 2"><figcaption>Temple 2</figcaption></figure>
-    <figure><img src="images/temple3.jpg" alt="Temple 3"><figcaption>Temple 3</figcaption></figure>
-    <figure><img src="images/temple4.jpg" alt="Temple 4"><figcaption>Temple 4</figcaption></figure>
-    <figure><img src="images/temple5.jpg" alt="Temple 5"><figcaption>Temple 5</figcaption></figure>
-    <figure><img src="images/temple6.jpg" alt="Temple 6"><figcaption>Temple 6</figcaption></figure>
-    <figure><img src="images/temple7.jpg" alt="Temple 7"><figcaption>Temple 7</figcaption></figure>
-    <figure><img src="images/temple8.jpg" alt="Temple 8"><figcaption>Temple 8</figcaption></figure>
-    <figure><img src="images/temple9.jpg" alt="Temple 9"><figcaption>Temple 9</figcaption></figure>
-
+    <section class="temple-gallery">
+      <figure><img src="images/temple1.jpg" alt="Temple 1"><figcaption>Temple 1</figcaption></figure>
+      <figure><img src="images/temple2.jpg" alt="Temple 2"><figcaption>Temple 2</figcaption></figure>
+      <figure><img src="images/temple3.jpg" alt="Temple 3"><figcaption>Temple 3</figcaption></figure>
+      <figure><img src="images/temple4.jpg" alt="Temple 4"><figcaption>Temple 4</figcaption></figure>
+      <figure><img src="images/temple5.jpg" alt="Temple 5"><figcaption>Temple 5</figcaption></figure>
+      <figure><img src="images/temple6.jpg" alt="Temple 6"><figcaption>Temple 6</figcaption></figure>
+      <figure><img src="images/temple7.jpg" alt="Temple 7"><figcaption>Temple 7</figcaption></figure>
+      <figure><img src="images/temple8.jpg" alt="Temple 8"><figcaption>Temple 8</figcaption></figure>
+      <figure><img src="images/temple9.jpg" alt="Temple 9"><figcaption>Temple 9</figcaption></figure>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Temple Album | Joshua Dimma</p>
-    <p>🌺Last Modified: <span id="lastModified">🌺</span></p>
-  </footer>`
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/temples.js" defer></script>
 </body>
 </html>

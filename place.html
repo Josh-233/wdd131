@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria – Country Page</title>
+  <meta name="description" content="Discover Nigeria - culture, landmarks, and weather.">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Nigeria</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#landmarks">Landmarks</a></li>
+        <li><a href="#weather">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <div class="hero">
+    <picture>
+      <source srcset="images/nigeria-hero-small.webp" media="(max-width: 600px)">
+      <source srcset="images/nigeria-hero-large.webp" media="(min-width: 601px)">
+      <img src="images/nigeria-hero-small.webp" alt="Scenic view of Nigeria">
+    </picture>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Nigeria</h2>
+      <p>
+        Nigeria, located in West Africa, is the most populous country on the continent. 
+        Known as the "Giant of Africa," it is rich in cultural diversity, natural resources, 
+        and vibrant traditions.
+      </p>
+    </section>
+
+    <section id="landmarks">
+      <h2>Famous Landmarks</h2>
+      <ul>
+        <li>Zuma Rock – the iconic natural monolith near Abuja</li>
+        <li>Olumo Rock – historic site in Abeokuta</li>
+        <li>Yankari National Park – wildlife reserve with hot springs</li>
+      </ul>
+    </section>
+
+    <section id="weather" class="weather">
+      <h2>Weather</h2>
+      <p>Temperature: 45 °F</p>
+      <p>Wind Speed: 5 mph</p>
+      <p>Wind Chill: <span id="windchill"></span></p>
+        <p>Humidity: 50%</p>
+      <img src="images/weather-icon.svg" alt="Weather icon">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Nigeria Country Page</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

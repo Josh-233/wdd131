@@ -1,15 +1,15 @@
 // temples.js
 
-// Toggle mobile nav
-const menuButton = document.querySelector("#menu");
-const nav = document.querySelector(".navigation");
+// Footer year and last modified
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("year");
+  const lastModifiedSpan = document.getElementById("lastModified");
 
-menuButton.addEventListener("click", () => {
-  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
+  if (lastModifiedSpan) {
+    lastModifiedSpan.textContent = document.lastModified;
+  }
 });
-
-// Footer year
-document.querySelector("#year").textContent = new Date().getFullYear();
-
-// Last modified
-document.querySelector("#lastModified").textContent = document.lastModified;

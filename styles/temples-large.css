@@ -1,15 +1,34 @@
-/* Large screen navigation */
-@media (min-width: 768px) {
-  #menu {
-    display: none; /* hide hamburger */
-  }
+/* temples-large.css - Larger screen styles */
 
-  .navigation {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-    gap: 1.5rem;
-    background: none;
-    padding: 0;
-  }
+nav {
+  gap: 2rem;
+}
+
+.hero img {
+  height: 350px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+}
+
+.temple-gallery {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.temple-gallery figure {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.temple-gallery figure:hover {
+  transform: scale(1.03);
 }
